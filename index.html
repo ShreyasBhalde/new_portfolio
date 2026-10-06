@@ -569,7 +569,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="map"><iframe loading="lazy" title="Map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11799.113503849969!2d76.21944446888189!3d21.331245444866152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1751973082088!5m2!1sen!2sin"></iframe></div>
       </div>
       <!-- Replace YOUR_FORM_ID with a Formspree / Web3Forms endpoint to receive messages directly -->
-      <form class="card reveal" id="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="card reveal" id="cform" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="0ead031b-9231-40f9-bb33-a43766cf868b">
+  <input type="hidden" name="from_name" value="Portfolio – shreyasbhalde.in">
+  <input type="checkbox" name="botcheck" style="display:none">
         <div class="f-row">
           <div><label for="n">Full name</label><input id="n" name="name" required placeholder="Your name" /></div>
           <div><label for="e">Email</label><input id="e" name="email" type="email" required placeholder="you@company.com" /></div>
